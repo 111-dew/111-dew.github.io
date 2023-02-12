@@ -1,0 +1,17 @@
+psw：<input type="text" id="2" /><input type="button" value="提交" onclick="mail()" />
+  
+<script>
+function mail()
+{
+    var patten2= new RegExp(123456)
+    var mail = document.getElementById("2").value;
+    if(patten2.test(mail))
+      {
+          alert("正確");
+      }
+    else
+      {
+          alert("錯誤");
+      }
+}
+</script>
