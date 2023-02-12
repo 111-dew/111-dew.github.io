@@ -1,1 +1,18 @@
-<p>hel1lo</p>
+會員號碼(不需要空格)：<input type="text" id="2" /><input type="button" value="提交" onclick="mail()" />
+  
+<script>
+function mail()
+{
+    var patten2= new RegExp(3217560111211741)
+    var mail = document.getElementById("2").value;
+    if(patten2.test(mail))
+      {
+          alert("输入正确");
+          window.location.href="https://111-dew.github.io/1714.html";
+      }
+    else
+      {
+          alert("沒有此會員");
+      }
+}
+</script>
